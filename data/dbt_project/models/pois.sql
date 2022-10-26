@@ -1,0 +1,1 @@
+select id, name, type, wkb_geometry geom from pois

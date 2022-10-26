@@ -1,7 +1,10 @@
 #!/bin/bash
 
+set -e # Exit immediately if a command exits with a non-zero status.
+
 # handle environment variables
 # requires having .env file defined
+# expects to be run in root, not in data
 env_file=.env
 if [ ! -f $env_file ]; then
   echo "No .env file found"

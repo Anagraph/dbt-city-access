@@ -1,4 +1,4 @@
-dbt_geoselec:
+dbt_profile:
   target: default
   outputs:
     default:
