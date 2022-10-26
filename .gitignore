@@ -1,2 +1,5 @@
 .idea
 .env
+*.pbf
+*secrets.yaml
+data/tmp/
