@@ -1,0 +1,11 @@
+{{
+    codegen.generate_model_yaml(model_name='h3_r4'),
+    codegen.generate_model_yaml(model_name='h3_r4_access'),
+    codegen.generate_model_yaml(model_name='h3_r6'),
+    codegen.generate_model_yaml(model_name='h3_r6_access'),
+    codegen.generate_model_yaml(model_name='h3_r7'),
+    codegen.generate_model_yaml(model_name='h3_r7_access'),
+    codegen.generate_model_yaml(model_name='pois'),
+    codegen.generate_model_yaml(model_name='pois_envelope'),
+    codegen.generate_model_yaml(model_name='pois_groups'),
+}}

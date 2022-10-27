@@ -1,0 +1,155 @@
+version: 2
+
+models:
+  - name: h3_r4
+    description: "Base table containing all h3 indexes at resolution 4 within the POI envelope"
+    columns:
+      - name: h3_id
+        description: "The h3 id at resolution 4"
+
+      - name: geom
+        description: "The polygon geometry of the hexagon"
+
+  - name: h3_r4_access
+    description: "Base table containing all h3 indexes at resolution 4 within the POI envelope with the access counts"
+    columns:
+      - name: h3_id
+        description: "The h3 id at resolution 4"
+
+      - name: amenity
+        description: "The count of amenities within the hexagon"
+
+      - name: shop
+        description: "The count of shops within the hexagon"
+
+      - name: leisure
+        description: "The count of leisure facilities within the hexagon"
+
+      - name: public_transport
+        description: "The count of public transport facilities within the hexagon"
+
+      - name: railway
+        description: "The count of railway facilities within the hexagon"
+
+      - name: landuse
+        description: "The count of landuse within the hexagon"
+
+      - name: office
+        description: "The count of office within the hexagon"
+
+      - name: geom
+        description: "The polygon geometry of the hexagon"
+
+  - name: h3_r6
+    description: "Base table containing all h3 indexes at resolution 6 within the POI envelope"
+    columns:
+      - name: h3_id
+        description: "The h3 id at resolution 6"
+
+      - name: geom
+        description: "The polygon geometry of the hexagon"
+
+  - name: h3_r6_access
+    description: "Base table containing all h3 indexes at resolution 6 within the POI envelope with the access counts"
+    columns:
+      - name: h3_id
+        description: "The h3 id at resolution 6"
+
+      - name: amenity
+        description: "The count of amenities within the hexagon"
+
+      - name: shop
+        description: "The count of shops within the hexagon"
+
+      - name: leisure
+        description: "The count of leisure facilities within the hexagon"
+
+      - name: public_transport
+        description: "The count of public transport facilities within the hexagon"
+
+      - name: railway
+        description: "The count of railway facilities within the hexagon"
+
+      - name: landuse
+        description: "The count of landuse within the hexagon"
+
+      - name: office
+        description: "The count of office within the hexagon"
+
+      - name: geom
+        description: "The polygon geometry of the hexagon"
+
+  - name: h3_r7
+    description: "Base table containing all h3 indexes at resolution 7 within the POI envelope"
+    columns:
+      - name: h3_id
+        description: "The h3 id at resolution 7"
+
+      - name: geom
+        description:  "The polygon geometry of the hexagon"
+
+  - name: h3_r7_access
+    description: "Base table containing all h3 indexes at resolution 7 within the POI envelope with the access counts"
+    columns:
+      - name: h3_id
+        description: "The h3 id at resolution 7"
+
+      - name: amenity
+        description: "The count of amenities within the hexagon"
+
+      - name: shop
+        description: "The count of shops within the hexagon"
+
+      - name: leisure
+        description: "The count of leisure facilities within the hexagon"
+
+      - name: public_transport
+        description: "The count of public transport facilities within the hexagon"
+
+      - name: railway
+        description: "The count of railway facilities within the hexagon"
+
+      - name: landuse
+        description: "The count of landuse within the hexagon"
+
+      - name: office
+        description: "The count of office within the hexagon"
+
+      - name: geom
+        description: "The polygon geometry of the hexagon"
+
+  - name: pois
+    description: "Base table containing all POIs from OSM"
+    columns:
+      - name: id
+        description: "The OSM id of the POI"
+
+      - name: name
+        description: "The name of the POI"
+
+      - name: group_name
+        description: "The group name of the POI"
+
+      - name: type
+        description: "The type of the POI"
+
+      - name: geom
+        description: "The point geometry of the POI"
+
+  - name: pois_envelope
+    description: "Base table containing the envelope of all POIs from OSM"
+    columns:
+      - name: geom
+        description: "The polygon geometry of the envelope"
+
+  - name: pois_groups
+    description: "Base table containing the POI groups"
+    columns:
+      - name: group_name
+        description: "The name of the POI group"
+
+      - name: subgroup
+        description: "The subgroup of the POI group"
+
+      - name: code
+        description: "The code of the POI group"
