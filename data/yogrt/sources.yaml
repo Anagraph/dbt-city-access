@@ -2,3 +2,8 @@ pois:
   type: point
   download_url: ./tmp/pois.geojson
   table_name: pois
+
+pois_group:
+  type: point
+  download_url: ./tmp/groups.csv
+  table_name: pois_groups
