@@ -3,7 +3,7 @@ indexes=[  { 'columns': ['h3_id']}, { 'columns': ['geom'], 'type': 'gist'},
 ])}}
 
 {%
-set grps = ["amenity", "landuse", "leisure", "office", "public_transport", "railway", "shop"] %}
+set grps = dbt_utils.get_column_values(table=ref('pois_groups'), column='group_name') %}
 
 with pois_h3_r6 as (
     select *, h3_geo_to_h3index(geom, 6) as h3index

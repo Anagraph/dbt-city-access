@@ -21,6 +21,9 @@ export PG_PORT="$PG_PORT"
 export PG_DATABASE="$PG_DATABASE"
 export DBT_THREADS="$DBT_THREADS"
 
+echo "Installing dbt packages"
+dbt deps --project-dir data/dbt_project/ --profiles-dir data/dbt_profiles/
+
 echo "Running dbt"
 dbt run --project-dir data/dbt_project/ --profiles-dir data/dbt_profiles/
 
