@@ -1,6 +1,12 @@
-# Project Name :rocket: :gear: :fire: 
+# City Access Map - Anagraph :cityscape: :walking: :zap:
 
 ## About The Project
+
+The project was inspired by the work done by [Leonardo Nicoletti](https://github.com/lnicoletti/) on
+his [City-Access-Map](https://github.com/lnicoletti/city-access-map) project.
+
+We some of his data processing steps for our PostGIS Day presentation our processing geospatial data with PostGIS and
+dbt.
 
 ### Built With
 
@@ -21,7 +27,7 @@ You must have the following software installed on the linux host machine:
 - psql
 - docker
 - docker-compose
-- yogrt 
+- yogrt
 
 ## Usage
 
