@@ -31,6 +31,13 @@ You must have the following software installed on the linux host machine:
 
 ## Usage
 
+- Add your `yogrt/secrets.yaml` (use `yogrt init --target .` to create a template)
+- Run `yogrt run --profile yogrt/profile.yaml --secrets yogrt/secrets.yaml --sources yogrt/sources.yaml` to import the
+  datasources
+- Create your `.env` file (use `.env.example` as a template)
+- Run `cd docker; docker-compose up` to start the database and pg_tileserv
+- Run dbt `./data/run_dbt.sh` to run the dbt project
+
 ### Overview
 
 ### Additional documentation
