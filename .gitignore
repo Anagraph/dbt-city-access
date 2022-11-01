@@ -2,4 +2,4 @@
 .env
 *.pbf
 *secrets.yaml
-data/tmp/
+tmp/

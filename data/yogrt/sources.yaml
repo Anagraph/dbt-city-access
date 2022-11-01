@@ -1,9 +1,14 @@
 pois:
   type: point
-  download_url: ./tmp/pois.geojson
+  download_url: s3://tc-trail-pa/pois.geojson
   table_name: pois
 
 pois_group:
   type: point
-  download_url: ./tmp/groups.csv
+  download_url: s3://tc-trail-pa/pois-groups.csv
   table_name: pois_groups
+
+local_pop:
+  type: polygon
+  download_url: s3://urban-metrics-data/canada_localpop.gpkg
+  table_name: local_pop
