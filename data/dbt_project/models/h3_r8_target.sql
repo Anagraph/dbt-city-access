@@ -11,6 +11,8 @@ select a.h3_id,
     b.{{grp}},
     b.{{grp}}/NULLIF(a.population, 0) {{grp}}_population,
     {% endfor %}
+    b.total,
+    b.total/NULLIF(a.population, 0) total_population
     b.geom
 from {{ref('local_pop')}} a join {{ref('h3_r8_access')}} b
 on a.h3_id = b.h3_id
