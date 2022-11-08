@@ -1,0 +1,1 @@
+select st_clusterdbscan(geom, eps:=0.01, minpoints:=2) over () as cid from dbt.h3_r8_target;

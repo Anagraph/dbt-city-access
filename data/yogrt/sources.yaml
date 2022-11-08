@@ -12,3 +12,8 @@ local_pop:
   type: polygon
   download_url: s3://urban-metrics-data/canada_localpop.gpkg
   table_name: local_pop
+
+population_centers:
+  type: polygon
+  download_url: s3://anagraph-public-bucket/population_centers.geojson
+  table_name: population_centers

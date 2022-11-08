@@ -1,0 +1,1 @@
+select ogc_fid as id, pcname as name, landarea, wkb_geometry as geom from population_centers
