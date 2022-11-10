@@ -1,1 +1,1 @@
-select ogc_fid as id, pcname as name, landarea, wkb_geometry as geom from population_centers
+select ogc_fid as id, pcname as name, landarea, st_transform(wkb_geometry, 4326) as geom from population_centers

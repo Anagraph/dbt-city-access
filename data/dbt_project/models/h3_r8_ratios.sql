@@ -12,7 +12,7 @@ select a.h3_id,
     b.{{grp}}/NULLIF(a.population, 0) {{grp}}_population,
     {% endfor %}
     b.total,
-    b.total/NULLIF(a.population, 0) total_population
+    b.total/NULLIF(a.population, 0) total_population,
     b.geom
 from {{ref('local_pop')}} a join {{ref('h3_r8_access')}} b
 on a.h3_id = b.h3_id
@@ -23,6 +23,8 @@ select h3_id,
     {{grp}},
     0 {{grp}}_population,
     {% endfor %}
+    0 total,
+    0 total_population,
     geom
 from {{ref('h3_r8_access')}}
 where h3_id not in (select h3_id from {{ref('local_pop')}})
