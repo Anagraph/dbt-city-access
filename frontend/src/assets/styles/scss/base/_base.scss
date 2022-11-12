@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //This defines 1rem is 10px
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: $color-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 425px) {
+  html,
+  body,
+  .mapboxgl-map,
+  .left-panel-layout {
+    height: 100vh !important;
+    max-height: -webkit-fill-available !important;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+label {
+  font-size: $font-size-small;
+}
+select {
+  font-size: $font-size-small;
+}

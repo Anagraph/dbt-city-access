@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/map-configuration.js"],"names":["center","lng","lat","zoom"],"mappings":"gHAAA,OAAe,cAAEA,OAAQ,CAAEC,KAAM,QAASC,IAAK,SAAWC,KAAM","file":"js/chunk-2d0b24e0.37e51d16.js","sourcesContent":["export default { center: { lng: -73.7394, lat: 45.5547 }, zoom: 6 }\n"],"sourceRoot":""}

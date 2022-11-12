@@ -1,0 +1,23 @@
+.categories {
+  max-height: 30rem;
+  padding-right: 1.2rem;
+  margin-top: 2.4rem;
+  white-space: pre-wrap;
+  overflow-y: scroll;
+  .point {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+  .name {
+    font-size: $font-size-small;
+  }
+  .value {
+    font-size: $font-size-small;
+  }
+  .my-button {
+    font-size: $font-size-small;
+  }
+  @media screen and (max-width: $breakpoint-mobile) {
+    max-height: 24rem;
+  }
+}

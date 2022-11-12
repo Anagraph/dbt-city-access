@@ -1,0 +1,14 @@
+"tiling_population_centers":
+       type: multipolygon
+       download_url: dbname='postgres' host=localhost port=1212 user='postgres' password='bidone' sslmode=disable key='id' srid=3857 type=MultiPolygon checkPrimaryKeyUnicity='1' table="dbt"."tiling_population_centers" (geom)
+       table_name: "tiling_population_centers"
+       attribute: total
+       symbology_type: ranges
+       style_path: /home/zacharydeziel/Documents/dbt-city-access/frontend/dist/gds/styles/tiling_population_centers.qml
+"tiling_r8_ratios_pois":
+       type: multipolygon
+       download_url: dbname='postgres' host=localhost port=1212 user='postgres' password='bidone' sslmode=disable key='h3_id' srid=3857 type=MultiPolygon checkPrimaryKeyUnicity='1' table="dbt"."tiling_r8_ratios_pois" (geom)
+       table_name: "tiling_r8_ratios_pois"
+       attribute: total_population
+       symbology_type: ranges
+       style_path: /home/zacharydeziel/Documents/dbt-city-access/frontend/dist/gds/styles/tiling_r8_ratios_pois.qml

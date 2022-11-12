@@ -3,3 +3,4 @@
 *.pbf
 *secrets.yaml
 tmp/
+qgis.qgz

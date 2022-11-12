@@ -1,0 +1,23 @@
+.left-panel {
+  &__toggler {
+    font-size: $font-size-medium;
+  }
+  &__container {
+    padding: 2.8rem 2.4rem 2.8rem 2.8rem;
+  }
+  &__panel {
+    text-align: left;
+    white-space: nowrap;
+  }
+  @media screen and (max-width: $breakpoint-mobile) {
+    top: 1.4rem !important;
+    left: 1.4rem !important;
+    &__toggler {
+      top: -1rem !important;
+      right: -1rem !important;
+      width: 1.8rem;
+      height: 1.8rem;
+      font-size: $font-size-small;
+    }
+  }
+}
