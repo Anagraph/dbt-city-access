@@ -15,7 +15,7 @@ select amenity::float / max_amenity                   amenity,
        leisure::float / max_leisure                   leisure,
        public_transport::float / max_public_transport public_transport,
        office::float / max_office                     office
-from {{ref('h3_r8_population_centers.sql')}}
+from {{ref('h3_r8_population_centers')}}
          cross join max
 order by total desc
 limit 5

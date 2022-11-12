@@ -153,3 +153,35 @@ models:
 
       - name: code
         description: "The code of the POI group"
+
+  - name: tiling_population_centers
+    description: "POIs per population center"
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+      - name: geom
+        tests:
+          - not_null
+          - is_qualified_geometry
+    tests:
+      - has_primary_key
+      - user_can_select:
+          user_name: publictiles
+
+  - name: tiling_r8_ratios_pois.sql
+    description: "R8 POIs categorie ratios"
+    columns:
+      - name: h3_id
+        tests:
+          - not_null
+          - unique
+      - name: geom
+        tests:
+          - not_null
+          - is_qualified_geometry
+    tests:
+      - has_primary_key
+      - user_can_select:
+          user_name: publictiles
